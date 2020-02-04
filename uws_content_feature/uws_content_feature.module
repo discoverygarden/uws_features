@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * @file
+ * Code for the UWS Content Feature feature.
+ */
+
+include_once 'uws_content_feature.features.inc';

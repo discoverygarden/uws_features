@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * uws_feature.features.user_permission.inc
@@ -81,6 +82,7 @@ function uws_feature_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'islandora_solr',
   );
@@ -91,6 +93,7 @@ function uws_feature_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'islandora_bookmark',
   );
@@ -111,6 +114,7 @@ function uws_feature_user_default_permissions() {
     'name' => 'use text format full_html',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'filter',
   );
@@ -121,6 +125,7 @@ function uws_feature_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'islandora',
   );

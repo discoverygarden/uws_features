@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * uws_feature.strongarm.inc
@@ -35,7 +36,7 @@ function uws_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'css_js_query_string';
-  $strongarm->value = 'mx90o3';
+  $strongarm->value = 'q2rx0o';
   $export['css_js_query_string'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -56,7 +57,7 @@ function uws_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'islandora_solr_base_filter';
-  $strongarm->value = '';
+  $strongarm->value = 'NOT RELS_EXT_hasModel_uri_ms:"info:fedora/islandora:collectionCModel"';
   $export['islandora_solr_base_filter'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -105,14 +106,14 @@ function uws_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'islandora_solr_facet_max_limit';
-  $strongarm->value = '20';
+  $strongarm->value = '35';
   $export['islandora_solr_facet_max_limit'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'islandora_solr_facet_min_limit';
-  $strongarm->value = '2';
+  $strongarm->value = '1';
   $export['islandora_solr_facet_min_limit'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -147,7 +148,7 @@ function uws_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'islandora_solr_namespace_restriction';
-  $strongarm->value = '';
+  $strongarm->value = 'uws';
   $export['islandora_solr_namespace_restriction'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -184,9 +185,9 @@ function uws_feature_strongarm() {
     ),
     'default' => 'default',
     'enabled' => array(
-      'grid' => 'grid',
-      'bookmark' => 0,
+      'bookmark' => 'bookmark',
       'default' => 'default',
+      'grid' => 0,
       'table' => 0,
     ),
   );
@@ -196,7 +197,7 @@ function uws_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'islandora_solr_query_fields';
-  $strongarm->value = 'dc.title^5 dc.subject^2 dc.description^2 dc.creator^2 dc.contributor^1 dc.type';
+  $strongarm->value = 'dc.title^5 dc.date^4 dc.subject^2 dc.description^2 dc.creator^2 dc.contributor^1 dc.type^1 dc.identifier^1 dc.relation';
   $export['islandora_solr_query_fields'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -211,8 +212,8 @@ function uws_feature_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'islandora_solr_secondary_display';
   $strongarm->value = array(
-    'csv' => 0,
-    'rss' => 0,
+    'csv' => 'csv',
+    'rss' => 'rss',
   );
   $export['islandora_solr_secondary_display'] = $strongarm;
 
@@ -220,7 +221,7 @@ function uws_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'islandora_solr_tabs__active_tab';
-  $strongarm->value = 'edit-default-display-settings';
+  $strongarm->value = 'edit-facet-settings';
   $export['islandora_solr_tabs__active_tab'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -320,7 +321,9 @@ function uws_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'path_alias_whitelist';
-  $strongarm->value = array();
+  $strongarm->value = array(
+    'node' => TRUE,
+  );
   $export['path_alias_whitelist'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -334,7 +337,7 @@ function uws_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_name';
-  $strongarm->value = 'islandora';
+  $strongarm->value = 'Western Sydney University ResearchDirect';
   $export['site_name'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -349,9 +352,13 @@ function uws_feature_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'views_block_hashes';
   $strongarm->value = array(
+    '42037bdf2077e2d6605bb7102ab177dd' => 'featured_research_data_collections-block',
     '30151412eb73ff9de45ec4209bd0898d' => 'datastream_downloads_by_country-block',
-    '7518164537523ba73652c9a5fd647fe6' => 'object_visitors_by_country-block',
     '0e421ddcad5e4ddbe2f4e87f52252332' => 'datastream_downloads_by_month-block',
+    '7196cbb81df1d17ca0cd459c31c8eac4' => 'google_analytics_reports_page-block',
+    '2e471cea8459491b84c00c691114ef5c' => 'google_analytics_reports_summary-block',
+    '3495e05fe4baa85b2a51a0e36e5088c6' => 'object_views_count-object_views_count_block',
+    '7518164537523ba73652c9a5fd647fe6' => 'object_visitors_by_country-block',
   );
   $export['views_block_hashes'] = $strongarm;
 
