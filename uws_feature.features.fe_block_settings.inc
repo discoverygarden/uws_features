@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * uws_feature.features.fe_block_settings.inc
@@ -22,11 +23,23 @@ function uws_feature_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'uws_library_AR' => array(
+      'bartik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'uws_library_AR',
-        'weight' => -16,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'themec' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'themec',
+        'weight' => -22,
       ),
     ),
     'title' => '',
@@ -40,14 +53,26 @@ function uws_feature_default_fe_block_settings() {
     'delta' => 'advanced',
     'module' => 'islandora_solr',
     'node_types' => array(),
-    'pages' => 'node/3',
+    'pages' => 'adv-search',
     'roles' => array(),
     'themes' => array(
-      'uws_library_AR' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'themec' => array(
         'region' => 'content',
         'status' => 1,
-        'theme' => 'uws_library_AR',
-        'weight' => -14,
+        'theme' => 'themec',
+        'weight' => -29,
       ),
     ),
     'title' => '<none>',
@@ -61,18 +86,31 @@ function uws_feature_default_fe_block_settings() {
     'delta' => 'basic_facets',
     'module' => 'islandora_solr',
     'node_types' => array(),
-    'pages' => '',
+    'pages' => 'islandora/search
+islandora/search/*',
     'roles' => array(),
     'themes' => array(
-      'uws_library_AR' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'themec' => array(
         'region' => 'sidebar_first',
         'status' => 1,
-        'theme' => 'uws_library_AR',
-        'weight' => 0,
+        'theme' => 'themec',
+        'weight' => -25,
       ),
     ),
     'title' => '',
-    'visibility' => 0,
+    'visibility' => 1,
   );
 
   $export['islandora_solr-current_query'] = array(
@@ -85,11 +123,23 @@ function uws_feature_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'uws_library_AR' => array(
-        'region' => 'sidebar_first',
-        'status' => 1,
-        'theme' => 'uws_library_AR',
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
         'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'themec' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'themec',
+        'weight' => -15,
       ),
     ),
     'title' => '',
@@ -106,11 +156,23 @@ function uws_feature_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'uws_library_AR' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'themec' => array(
         'region' => 'content',
         'status' => 1,
-        'theme' => 'uws_library_AR',
-        'weight' => -20,
+        'theme' => 'themec',
+        'weight' => -31,
       ),
     ),
     'title' => '<none>',
@@ -119,23 +181,35 @@ function uws_feature_default_fe_block_settings() {
 
   $export['islandora_solr-simple'] = array(
     'cache' => -1,
-    'css_class' => '',
+    'css_class' => 'block-islandora-solr-simple',
     'custom' => 0,
     'delta' => 'simple',
     'module' => 'islandora_solr',
     'node_types' => array(),
-    'pages' => '',
+    'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
-      'uws_library_AR' => array(
+      'bartik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'uws_library_AR',
-        'weight' => -15,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'themec' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'themec',
+        'weight' => -11,
       ),
     ),
-    'title' => '',
-    'visibility' => 0,
+    'title' => 'Search the repository',
+    'visibility' => 1,
   );
 
   $export['islandora_solr-sort'] = array(
@@ -145,18 +219,30 @@ function uws_feature_default_fe_block_settings() {
     'delta' => 'sort',
     'module' => 'islandora_solr',
     'node_types' => array(),
-    'pages' => '',
+    'pages' => 'islandora/search*',
     'roles' => array(),
     'themes' => array(
-      'uws_library_AR' => array(
+      'bartik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'uws_library_AR',
+        'theme' => 'bartik',
         'weight' => 0,
       ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'themec' => array(
+        'region' => 'sidebar_first',
+        'status' => 1,
+        'theme' => 'themec',
+        'weight' => -26,
+      ),
     ),
-    'title' => '',
-    'visibility' => 0,
+    'title' => 'Sort By',
+    'visibility' => 1,
   );
 
   $export['menu-features'] = array(
@@ -169,11 +255,23 @@ function uws_feature_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'uws_library_AR' => array(
+      'bartik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'uws_library_AR',
+        'theme' => 'bartik',
         'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'themec' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'themec',
+        'weight' => -25,
       ),
     ),
     'title' => '',
@@ -190,10 +288,22 @@ function uws_feature_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'uws_library_AR' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'themec' => array(
         'region' => 'horizontal_menu',
         'status' => 1,
-        'theme' => 'uws_library_AR',
+        'theme' => 'themec',
         'weight' => 0,
       ),
     ),
@@ -211,11 +321,23 @@ function uws_feature_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'uws_library_AR' => array(
+      'bartik' => array(
         'region' => 'content',
         'status' => 1,
-        'theme' => 'uws_library_AR',
-        'weight' => -19,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'themec' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'themec',
+        'weight' => -28,
       ),
     ),
     'title' => '',
@@ -232,11 +354,23 @@ function uws_feature_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'uws_library_AR' => array(
+      'bartik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'uws_library_AR',
-        'weight' => -11,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'themec' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'themec',
+        'weight' => -9,
       ),
     ),
     'title' => '',
@@ -253,11 +387,56 @@ function uws_feature_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'uws_library_AR' => array(
+      'bartik' => array(
+        'region' => 'sidebar_first',
+        'status' => 1,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'uws_library_AR',
-        'weight' => -9,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'themec' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'themec',
+        'weight' => -4,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['system-powered-by'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'powered-by',
+    'module' => 'system',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => 'footer',
+        'status' => 1,
+        'theme' => 'bartik',
+        'weight' => 10,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 10,
+      ),
+      'themec' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'themec',
+        'weight' => -2,
       ),
     ),
     'title' => '',
@@ -274,11 +453,23 @@ function uws_feature_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'uws_library_AR' => array(
+      'bartik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'uws_library_AR',
-        'weight' => 1,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'themec' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'themec',
+        'weight' => 12,
       ),
     ),
     'title' => '',
@@ -295,11 +486,23 @@ function uws_feature_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'uws_library_AR' => array(
+      'bartik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'uws_library_AR',
+        'theme' => 'bartik',
         'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'themec' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'themec',
+        'weight' => 11,
       ),
     ),
     'title' => '',
@@ -316,11 +519,23 @@ function uws_feature_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'uws_library_AR' => array(
+      'bartik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'uws_library_AR',
-        'weight' => 5,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'themec' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'themec',
+        'weight' => 16,
       ),
     ),
     'title' => '',
@@ -337,36 +552,27 @@ function uws_feature_default_fe_block_settings() {
     'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
-      'uws_library_AR' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'themec' => array(
         'region' => 'content',
         'status' => 1,
-        'theme' => 'uws_library_AR',
-        'weight' => -15,
+        'theme' => 'themec',
+        'weight' => -30,
       ),
     ),
     'title' => '',
     'visibility' => 1,
-  );
-
-  $export['views-frontpage-block_1'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'frontpage-block_1',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'uws_library_AR' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'uws_library_AR',
-        'weight' => 2,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
   );
 
   $export['views-top_facet_searches-block'] = array(
@@ -379,11 +585,23 @@ function uws_feature_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'uws_library_AR' => array(
+      'bartik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'uws_library_AR',
-        'weight' => 3,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'themec' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'themec',
+        'weight' => 14,
       ),
     ),
     'title' => '',
@@ -400,11 +618,23 @@ function uws_feature_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'uws_library_AR' => array(
+      'bartik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'uws_library_AR',
-        'weight' => 4,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'themec' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'themec',
+        'weight' => 15,
       ),
     ),
     'title' => '',
