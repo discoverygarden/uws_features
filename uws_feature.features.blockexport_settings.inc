@@ -4362,7 +4362,7 @@ islandora/search/*',
   'theme' => 'bartik',
   'status' => 0,
   'weight' => 0,
-  'region' => -1,
+  'region' => '',
   'custom' => 0,
   'visibility' => 1,
   'pages' => '<front>',
@@ -4377,7 +4377,7 @@ islandora/search/*',
   'theme' => 'seven',
   'status' => 0,
   'weight' => 0,
-  'region' => -1,
+  'region' => '',
   'custom' => 0,
   'visibility' => 1,
   'pages' => '<front>',
@@ -4454,8 +4454,7 @@ print drupal_render($form);
 );
   $export['block_custom'][] = array(
   'bid' => 9,
-  'body' => '<a href="http://research-data.westernsydney.edu.au/redbox/dashboard/home" title="Search for Research Datasets">Search for Research Datasets</a>
-<div id="dialog-confirm" title="Attention"></div>',
+  'body' => '<a href="https://research-data.westernsydney.edu.au/redbox/default/search" title="Search for Research Datasets">Search for Research Datasets</a>',
   'info' => 'Search for Research Datasets',
   'format' => 'full_html',
 );
