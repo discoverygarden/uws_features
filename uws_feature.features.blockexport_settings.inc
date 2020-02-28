@@ -4454,7 +4454,7 @@ print drupal_render($form);
 );
   $export['block_custom'][] = array(
   'bid' => 9,
-  'body' => '<a href="https://research-data.westernsydney.edu.au/redbox/default/search" title="Search for Research Datasets">Search for Research Datasets</a>',
+  'body' => '<a href="https://research-data.westernsydney.edu.au/redbox/default/home" title="Search for Research Datasets">Search for Research Datasets</a>',
   'info' => 'Search for Research Datasets',
   'format' => 'full_html',
 );
